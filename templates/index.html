@@ -12,6 +12,22 @@
         <a class="btn btn-danger" href="/logout">Log out</a>
     </form>
 
+<form class="forma" method="post" action="/add">
+    <h3>Add contact</h3>
+        <label>Name: </label>
+        <input class="form-control" type="text" name="contact-name"><br>
+        <label>Surname: </label>
+        <input class="form-control" type="text" name="contact-surname"><br>
+        <label>E-mail: </label>
+        <input class="form-control" type="email" name="contact-email"><br>
+        <label>Phone number: </label>
+        <input class="form-control" type="text" name="contact-phone"><br>
+        <label>City: </label>
+        <input class="form-control" type="text" name="contact-city"><br>
+
+        <button class="btn btn-danger">Add contact</button>
+    </form>
+
 
     {% else %}
     <form class="forma" method="post" action="/login">

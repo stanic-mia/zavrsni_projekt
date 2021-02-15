@@ -122,14 +122,16 @@ def add_contact():
     db.add(contact)
     db.commit()
 
-    return render_template("add_contact.html", contact=contact)
+    response = make_response(redirect(url_for("index")))
 
-@app.route("/contacts")
+    return response
+
+@app.route("/contacts", methods=["GET"])
 def contacts():
 
-    contact = db.query(Contact).all()
+    contacts = db.query(Contact).all()
 
-    return render_template("contacts.html")
+    return render_template("contacts.html", contacts=contacts)
 
 @app.route("/joke", methods=["GET"])
 def joke():
