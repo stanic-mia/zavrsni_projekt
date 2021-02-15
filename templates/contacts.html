@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>My contacts</h1>
+
+      <ul>
+          {% for contact in contacts %}
+            <li>
+                <p><strong>Name: </strong>{{contact.name}}</p>
+                <p><strong>Surname: </strong>{{contact.surname}}</p>
+                <p><strong>E-mail: </strong>{{contact.email}}</p>
+                <p><strong>Phone number: </strong>{{contact.phone}}</p>
+                <p><strong>City: </strong>{{contact.city}}</p>
+            </li>
+      </ul>
+
+{% endblock content %}

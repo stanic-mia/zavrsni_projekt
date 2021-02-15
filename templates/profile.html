@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>My profile</h1>
+
+    <form class="forma">
+        <p><strong>Name: </strong> {{ user.name }}</p>
+        <br>
+        <p><strong>E-mail: </strong> {{ user.email }}</p>
+        <br>
+
+        <a class="btn btn-danger" href="/profile/edit">Edit profile</a><br>
+
+
+        <a class="btn btn-danger" href="/profile/delete">Delete profile</a><br>
+
+    </form>
+
+{% endblock content %}

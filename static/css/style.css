@@ -1,0 +1,54 @@
+/* moj CSS */
+
+body {
+    background-image: url("/static/img/pozadina1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.forma {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: 20px;
+    border: 5px solid black;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.btn {
+    font-size: 20px;
+}
+
+.slika {
+    margin-left: 100px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.jokes {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin: 20px;
+    border: 5px solid black;
+    width: 500px;
+    padding: 20px;
+}
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Edit your profile</h1>
+
+    <form class="forma" method="post">
+
+        <p>
+            <strong>Your name: </strong>
+            <input class="form-control" type="text" value="{{user.name}}" name="profile-name">
+        </p>
+
+        <p>
+            <strong>Your email: </strong>
+            <input class="form-control" type="text" value="{{user.email}}" name="profile-email">
+        </p>
+        <br>
+
+        <button class="btn btn-danger">Submit</button>
+
+    </form>
+
+{% endblock content %}

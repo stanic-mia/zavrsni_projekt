@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Address book</h1>
+
+{% if user %}
+    <form class="forma" method="post">
+        <a class="btn btn-danger" href="/profile">My profile</a><br>
+        <a class="btn btn-danger" href="/contacts">My contacts</a><br>
+        <a class="btn btn-danger" href="/joke">Random joke</a><br>
+        <a class="btn btn-danger" href="/logout">Log out</a>
+    </form>
+
+
+    {% else %}
+    <form class="forma" method="post" action="/login">
+        <p>Acount data:</p>
+        <input class="form-control" type="text" name="user-name" placeholder="Enter your name"><br>
+        <input class="form-control" type="email" name="user-email" placeholder="Enter your email address"><br>
+        <input class="form-control" type="password" name="user-password" placeholder="Enter your password"><br>
+
+        <button class="btn btn-danger">Submit</button>
+    </form>
+{% endif %}
+
+
+
+
+{%  endblock content%}
